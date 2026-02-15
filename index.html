@@ -5,67 +5,113 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Smart Development Hub</title>
 
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
 <style>
-body {
+* {
     margin: 0;
-    font-family: Arial, sans-serif;
-    background: #f4f6f9;
-    color: #333;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f8fafc;
+    color: #1f2937;
 }
 
 header {
-    background: #111827;
+    background: linear-gradient(135deg, #111827, #1e3a8a);
     color: white;
-    padding: 60px 20px;
+    padding: 80px 20px;
     text-align: center;
 }
 
 header h1 {
-    margin: 0;
-    font-size: 40px;
+    font-size: 42px;
+    font-weight: 700;
 }
 
 header p {
-    margin-top: 10px;
+    margin-top: 15px;
     font-size: 18px;
-    color: #d1d5db;
+    color: #e5e7eb;
 }
 
 .btn {
     display: inline-block;
-    margin-top: 20px;
-    padding: 12px 25px;
+    margin-top: 25px;
+    padding: 12px 28px;
     background: #2563eb;
     color: white;
     text-decoration: none;
-    border-radius: 6px;
+    border-radius: 30px;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+
+.btn:hover {
+    background: #1d4ed8;
 }
 
 section {
-    padding: 60px 20px;
+    padding: 70px 20px;
     text-align: center;
+}
+
+section h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
 }
 
 .services {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 25px;
     flex-wrap: wrap;
 }
 
 .card {
     background: white;
-    padding: 25px;
-    width: 250px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    padding: 30px;
+    width: 280px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    transition: 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+.card h3 {
+    margin-bottom: 15px;
+    font-size: 20px;
+    color: #2563eb;
+}
+
+.card p {
+    font-size: 14px;
+    color: #4b5563;
+}
+
+.contact-box {
+    background: #111827;
+    color: white;
+    padding: 50px 20px;
+}
+
+.contact-box p {
+    margin-top: 15px;
+    font-size: 16px;
 }
 
 footer {
-    background: #111827;
-    color: white;
-    text-align: center;
+    background: #0f172a;
+    color: #9ca3af;
     padding: 20px;
+    text-align: center;
+    font-size: 14px;
 }
 </style>
 </head>
@@ -74,8 +120,8 @@ footer {
 
 <header>
     <h1>Smart Development Hub</h1>
-    <p>Web Development | Graphic Design | Content Creation</p>
-    <a href="#contact" class="btn">Hire Me</a>
+    <p>Professional Web Development • Creative Graphic Design • Content Writing</p>
+    <a href="#contact" class="btn">Work With Me</a>
 </header>
 
 <section>
@@ -83,24 +129,25 @@ footer {
     <div class="services">
         <div class="card">
             <h3>Web Development</h3>
-            <p>Modern and responsive websites for businesses and startups.</p>
+            <p>Responsive and modern websites designed to grow your business and increase online presence.</p>
         </div>
 
         <div class="card">
             <h3>Graphic Design</h3>
-            <p>Creative social media posts, logos, and branding designs.</p>
+            <p>Eye-catching social media posts, branding materials, and creative designs that stand out.</p>
         </div>
 
         <div class="card">
             <h3>Content Writing</h3>
-            <p>Engaging and SEO-friendly content for your website or blog.</p>
+            <p>High-quality and engaging content tailored for websites, blogs, and social media platforms.</p>
         </div>
     </div>
 </section>
 
-<section id="contact">
+<section id="contact" class="contact-box">
     <h2>Contact Me</h2>
-    <p>Email: your@email.com</p>
+    <p>Email: gurmeetkotla8@gmail.com</p>
+    <p>Available for freelance projects and collaborations.</p>
 </section>
 
 <footer>
